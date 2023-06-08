@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.jpg";
+import { BsFillPersonFill } from "react-icons/bs";
 
 const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <Link>home</Link>
+        <Link to='/'>Home</Link>
       </li>
       <li>
-        <Link> about</Link>
+        <Link>Instructors</Link>
       </li>
       <li>
-        <Link>category</Link>
+        <Link>Classes</Link>
+      </li>
+      <li>
+        <Link>Dashboard</Link>
       </li>
     </>
   );
@@ -57,7 +61,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <p className="text-3xl pe-4"><BsFillPersonFill></BsFillPersonFill></p>
+          <Link to='/login'><button className="btn btn-outline btn-info">Login</button></Link>
         </div>
       </div>
     </>
