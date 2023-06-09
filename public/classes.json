@@ -1,0 +1,69 @@
+[
+    {
+      "_id": 1,
+      "sports_name": "Basketball",
+      "image": "https://i.ibb.co/6Rw88S9/markus-spiske-Bfphc-Cvhl6-E-unsplash.jpg"  ,
+      "number_of_students": 20
+    },
+    {
+      "_id": 2,
+      "sports_name": "Soccer",
+      "image": "https://i.ibb.co/M9wdZs5/banner-9.jpg",
+      "number_of_students": 18
+    },
+    {
+      "_id": 3,
+      "sports_name": "Swimming",
+      "image": "https://i.ibb.co/RzdC1J2/banner-5.jpg" ,
+      "number_of_students": 15
+    },
+    {
+      "_id": 4,
+      "sports_name": "Tennis",
+      "image": "https://i.ibb.co/GH5tJ5Q/valentin-balan-k0a-VMMZwqt-U-unsplash.jpg",
+      "number_of_students": 12
+    },
+    {
+      "_id": 5,
+      "sports_name": "Volleyball",
+      "image": "https://i.ibb.co/zJ24x3s/banner-6.jpg" ,
+      "number_of_students": 16
+    },
+    {
+        "_id": 6,
+        "sports_name": "Gymnastics",
+        "image": "https://i.ibb.co/bs7ygZx/banner-4.jpg",
+        "number_of_students": 10
+      },
+      {
+        "_id": 7,
+        "sports_name": "Martial Arts",
+        "image": "https://i.ibb.co/4T378pC/jonathan-borba-Yf1-Seg-AI84o-unsplash.jpg" ,
+        "number_of_students": 15
+      },
+      {
+        "_id": 8,
+        "sports_name": "Golf",
+        "image": "https://i.ibb.co/fSRGwL7/banner-8.jpg",
+        "number_of_students": 8
+      },
+      {
+        "_id": 9,
+        "sports_name": "Badminton",
+        "image":"https://i.ibb.co/K2vpRhq/saif71-com-Sd-Qy-Rs-Swx4-Y-unsplash.jpg",
+        "number_of_students": 10
+      },
+      {
+        "_id": 10,
+        "sports_name": "Hockey",
+        "image": "https://i.ibb.co/1TJJJYY/gerhard-crous-Vz9-Z-up-JU3-U-unsplash.jpg",
+        "number_of_students": 16
+      },
+      {
+        "_id": 11,
+        "sports_name": "Rugby",
+        "image": "https://i.ibb.co/Ky096Wp/olga-guryanova-ft7v-Jxwl2-RY-unsplash.jpg",
+        "number_of_students": 14
+      }
+  ]
+  

@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
+import PopularClassCard from '../../../Shared/PopularClassCard/PopularClassCard';
 
 const PopulerClasses = () => {
+
+    const [classes, setClasses] = useState([])
+   useEffect(()=>{
+
+    fetch('classes.json')
+    .then(res => res.json())
+    .then(data =>setClasses(data))
+   }, [])
     return (
-        <section>
+        <div>
            <SectionTitle heading='popular classes' subHeading='classes are here'></SectionTitle> 
-        </section>
+        
+            <div className='grid lg:grid-cols-3 gap-5'>
+              {
+                classes.map(cl => <PopularClassCard key={cl._id} cl={cl}></PopularClassCard>)
+              }
+            </div>
+        </div>
     );
 };
 

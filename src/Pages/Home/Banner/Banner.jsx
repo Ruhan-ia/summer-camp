@@ -9,6 +9,7 @@ import banner5 from '../../../assets/images/Banner/banner-55.jpg'
 import banner6 from '../../../assets/images/Banner/banner-6.jpg'
 import banner7 from '../../../assets/images/Banner/banner-77.jpg'
 import banner8 from '../../../assets/images/Banner/banner-88.jpg'
+import banner9 from '../../../assets/images/Banner/banner-9.jpg'
 
 const Banner = () => {
     return (
@@ -39,6 +40,9 @@ const Banner = () => {
                 </div>
                 <div>
                     <img src={banner8} />
+                </div>
+                <div>
+                    <img src={banner9} />
                 </div>
                
             </Carousel>   
