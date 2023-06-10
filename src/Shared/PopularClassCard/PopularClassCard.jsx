@@ -12,9 +12,7 @@ const PopularClassCard = ({ cl }) => {
       <div className="card-body">
         <h2 className="card-title">{sports_name}</h2>
         <p>Number of students:{ number_of_students}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-        </div>
+       
       </div>
     </div>
   );

@@ -1,0 +1,137 @@
+[
+    {
+      
+      "sports_name": "Basketball",
+      "image": "https://i.ibb.co/6Rw88S9/markus-spiske-Bfphc-Cvhl6-E-unsplash.jpg"  ,
+      "number_of_students": 20,
+      "instructor_name": "John Smith",
+      "available_seats": 10,
+      "price": 50
+    },
+    {
+      
+      "sports_name": "Soccer",
+      "image": "https://i.ibb.co/M9wdZs5/banner-9.jpg",
+      "number_of_students": 18,
+      "instructor_name": "Emily Johnson",
+      "available_seats": 7,
+      "price": 40
+    },
+    {
+      
+      "sports_name": "Swimming",
+      "image": "https://i.ibb.co/RzdC1J2/banner-5.jpg" ,
+      "number_of_students": 15,
+      "instructor_name": "Michael Davis",
+      "available_seats": 5,
+      "price": 60
+    },
+    {
+      
+      "sports_name": "Tennis",
+      "image": "https://i.ibb.co/GH5tJ5Q/valentin-balan-k0a-VMMZwqt-U-unsplash.jpg",
+      "number_of_students": 12,
+      "instructor_name": "Sophia Anderson",
+      "available_seats": 3,
+      "price": 35
+    },
+    {
+      
+      "sports_name": "Volleyball",
+      "image": "https://i.ibb.co/zJ24x3s/banner-6.jpg" ,
+      "number_of_students": 16,
+      "instructor_name": "Daniel Wilson",
+      "available_seats": 8,
+      "price": 45
+    },
+    {
+        
+        "sports_name": "Gymnastics",
+        "image": "https://i.ibb.co/bs7ygZx/banner-4.jpg",
+        "number_of_students": 15,
+        "instructor_name": "Olivia Thompson",
+        "available_seats": 5,
+        "price": 55
+      },
+      {
+        
+        "sports_name": "Baseball",
+        "image": "https://i.ibb.co/4jL05CY/bill-stephan-xzikohlx4j-Y-unsplash.jpg" ,
+        "number_of_students": 14,
+        "instructor_name": "David Rodriguez",
+        "available_seats": 2,
+        "price": 45
+      },
+      {
+        
+        "sports_name": "Martial Arts",
+        "image": "https://i.ibb.co/4T378pC/jonathan-borba-Yf1-Seg-AI84o-unsplash.jpg" ,
+        "number_of_students": 20,
+        "instructor_name": "Emma Harris",
+        "available_seats": 10,
+        "price": 60
+      },
+      {
+        
+        "sports_name": "Dance",
+        "image": "https://i.ibb.co/qJcBW4g/georgia-de-lotz-Js-Q6-K5-Cf-J7s-unsplash.jpg" ,
+        "number_of_students": 12,
+        "instructor_name": "Liam Thompson",
+        "available_seats": 4,
+        "price": 40
+      },
+      {
+        
+        "sports_name": "Track and Field",
+        "image": "https://i.ibb.co/3RQ6BYX/braden-collum-9-HI8-UJMSd-ZA-unsplash.jpg" ,
+        "number_of_students": 18,
+        "instructor_name": "Ava Martinez",
+        "available_seats": 6,
+        "price": 50
+      },
+      {
+        
+        "sports_name": "Golf",
+        "image": "https://i.ibb.co/fSRGwL7/banner-8.jpg",
+        "number_of_students": 8,
+        "instructor_name": "William Anderson",
+        "available_seats": 2,
+        "price": 70
+      },
+      {
+        
+        "sports_name": "Cricket",
+        "image": "https://i.ibb.co/jHWzvR5/banner-2.jpg" ,
+        "number_of_students": 18,
+        "instructor_name": "Sophie Turner",
+        "available_seats": 5,
+        "price": 55
+      },
+      {
+        
+        "sports_name": "Badminton",
+        "image":"https://i.ibb.co/K2vpRhq/saif71-com-Sd-Qy-Rs-Swx4-Y-unsplash.jpg",
+        "number_of_students": 10,
+        "instructor_name": "Jacob Davis",
+        "available_seats": 3,
+        "price": 40
+      },
+      {
+        
+        "sports_name": "Hockey",
+        "image": "https://i.ibb.co/1TJJJYY/gerhard-crous-Vz9-Z-up-JU3-U-unsplash.jpg",
+        "number_of_students": 16,
+        "instructor_name": "Isabella Brown",
+        "available_seats": 8,
+        "price": 50
+      },
+      {
+        
+        "sports_name": "Rugby",
+        "image": "https://i.ibb.co/Ky096Wp/olga-guryanova-ft7v-Jxwl2-RY-unsplash.jpg",
+        "number_of_students": 14,
+        "instructor_name": "Noah Wilson",
+        "available_seats": 4,
+        "price": 45
+      }
+  ]
