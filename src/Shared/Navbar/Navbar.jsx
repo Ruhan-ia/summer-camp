@@ -7,27 +7,26 @@ import { AuthContext } from "../../Provider/AuthProvider";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
-  const handleLogOut = () =>{
+  const handleLogOut = () => {
     logOut()
-    .then(result =>{
-      const loggedUser = result.user
-      console.log(loggedUser)
-
-    })
-    .catch(error =>{
-      console.log(error.message)
-    })
-  }
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   const navOptions = (
     <>
       <li>
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link>Instructors</Link>
+        <Link to="/instructors">Instructors</Link>
       </li>
       <li>
-        <Link>Classes</Link>
+        <Link to="/classes">Classes</Link>
       </li>
       {user && (
         <li>
@@ -77,22 +76,26 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          {user ? 
+          {user ? (
             <>
-              
-              
-                <button onClick={handleLogOut} className="btn btn-outline btn-info">Logout</button>
-              
-              
-              <p className="text-3xl pe-4">
-                <BsFillPersonFill></BsFillPersonFill>
-              </p>
+              <div className="avatar">
+                <div className="w-16 rounded-full me-5">
+                  <img src={user.photoURL} />
+                </div>
+              </div>
+
+              <button
+                onClick={handleLogOut}
+                className="btn btn-outline btn-info"
+              >
+                Logout
+              </button>
             </>
-          : 
+          ) : (
             <Link to="/login">
               <button className="btn btn-outline btn-info">Login</button>
             </Link>
-          }
+          )}
         </div>
       </div>
     </>

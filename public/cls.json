@@ -5,6 +5,8 @@
       "image": "https://i.ibb.co/6Rw88S9/markus-spiske-Bfphc-Cvhl6-E-unsplash.jpg"  ,
       "number_of_students": 20,
       "instructor_name": "John Smith",
+      "in_email": "john@gmail.com",
+      "instructor_img":"https://i.ibb.co/TYnSWzS/nicole-green-ku-G7iv-PVXNI-unsplash.jpg",
       "available_seats": 10,
       "price": 50
     },
@@ -14,6 +16,8 @@
       "image": "https://i.ibb.co/M9wdZs5/banner-9.jpg",
       "number_of_students": 18,
       "instructor_name": "Emily Johnson",
+      "in_email":"emily@gmail.com",
+      "instructor_img":"https://i.ibb.co/5RF5VcK/elijah-ekdahl-KEDRumn1-Kx-E-unsplash.jpg",
       "available_seats": 7,
       "price": 40
     },
@@ -23,6 +27,8 @@
       "image": "https://i.ibb.co/RzdC1J2/banner-5.jpg" ,
       "number_of_students": 15,
       "instructor_name": "Michael Davis",
+      "in_email":"davis@gmail.com",
+      "instructor_img":"https://i.ibb.co/Fw2m5dB/greg0rygall3gos-fiy-Z-Eny-F8k-unsplash.jpg",
       "available_seats": 5,
       "price": 60
     },
@@ -32,6 +38,8 @@
       "image": "https://i.ibb.co/GH5tJ5Q/valentin-balan-k0a-VMMZwqt-U-unsplash.jpg",
       "number_of_students": 12,
       "instructor_name": "Sophia Anderson",
+      "in_email": "sophia@gmail.com",
+      "instructor_img":"https://i.ibb.co/TYnSWzS/nicole-green-ku-G7iv-PVXNI-unsplash.jpg",
       "available_seats": 3,
       "price": 35
     },
@@ -41,6 +49,9 @@
       "image": "https://i.ibb.co/zJ24x3s/banner-6.jpg" ,
       "number_of_students": 16,
       "instructor_name": "Daniel Wilson",
+      "in_email":"wilson@gmail.com",
+      "instructor_img":"https://i.ibb.co/TYnSWzS/nicole-green-ku-G7iv-PVXNI-unsplash.jpg",
+
       "available_seats": 8,
       "price": 45
     },
@@ -50,6 +61,9 @@
         "image": "https://i.ibb.co/bs7ygZx/banner-4.jpg",
         "number_of_students": 15,
         "instructor_name": "Olivia Thompson",
+        "in_email":"olivia@gmail.com",
+        "instructor_img":"https://i.ibb.co/yftNJNy/mohamad-khosravi-v-S0-Kya7-E5-V4-unsplash.jpg",
+
         "available_seats": 5,
         "price": 55
       },
@@ -59,6 +73,8 @@
         "image": "https://i.ibb.co/4jL05CY/bill-stephan-xzikohlx4j-Y-unsplash.jpg" ,
         "number_of_students": 14,
         "instructor_name": "David Rodriguez",
+        "in_email":"rodri@gmail.com",
+        "instructor_img":"https://i.ibb.co/TYnSWzS/nicole-green-ku-G7iv-PVXNI-unsplash.jpg",
         "available_seats": 2,
         "price": 45
       },
@@ -68,6 +84,8 @@
         "image": "https://i.ibb.co/4T378pC/jonathan-borba-Yf1-Seg-AI84o-unsplash.jpg" ,
         "number_of_students": 20,
         "instructor_name": "Emma Harris",
+        "in_email":"emma@gamil.com",
+        "instructor_img":"https://i.ibb.co/2WDT4vw/katerina-kerdi-sw-Ifq-Ubmu0o-unsplash.jpg",
         "available_seats": 10,
         "price": 60
       },
@@ -77,6 +95,8 @@
         "image": "https://i.ibb.co/qJcBW4g/georgia-de-lotz-Js-Q6-K5-Cf-J7s-unsplash.jpg" ,
         "number_of_students": 12,
         "instructor_name": "Liam Thompson",
+        "in_email":"liam@gmail.com",
+        "instructor_img":"https://i.ibb.co/4j3xbbX/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
         "available_seats": 4,
         "price": 40
       },
@@ -86,6 +106,9 @@
         "image": "https://i.ibb.co/3RQ6BYX/braden-collum-9-HI8-UJMSd-ZA-unsplash.jpg" ,
         "number_of_students": 18,
         "instructor_name": "Ava Martinez",
+        "in_email":"ava@gmail.com",
+        "instructor_img":"https://i.ibb.co/74YTBR1/ali-morshedlou-WMD64t-Mfc4k-unsplash-1.jpg",
+
         "available_seats": 6,
         "price": 50
       },
@@ -95,6 +118,8 @@
         "image": "https://i.ibb.co/fSRGwL7/banner-8.jpg",
         "number_of_students": 8,
         "instructor_name": "William Anderson",
+        "in_email":"anderson@gmal.com",
+        "instructor_img":"https://i.ibb.co/Rv1Bp24/jakob-owens-lk-MJc-GDZLVs-unsplash.jpg",
         "available_seats": 2,
         "price": 70
       },
@@ -104,6 +129,8 @@
         "image": "https://i.ibb.co/jHWzvR5/banner-2.jpg" ,
         "number_of_students": 18,
         "instructor_name": "Sophie Turner",
+        "in_email":"sophie@gmail.com",
+        "instructor_img":"https://i.ibb.co/3kGFDnj/lethicia-matos-CSh-h-NHc3-Y8-unsplash.jpg",
         "available_seats": 5,
         "price": 55
       },
@@ -113,6 +140,8 @@
         "image":"https://i.ibb.co/K2vpRhq/saif71-com-Sd-Qy-Rs-Swx4-Y-unsplash.jpg",
         "number_of_students": 10,
         "instructor_name": "Jacob Davis",
+        "in_email":"jacob@gmail.com",
+        "instructor_img":"https://i.ibb.co/yftNJNy/mohamad-khosravi-v-S0-Kya7-E5-V4-unsplash.jpg",
         "available_seats": 3,
         "price": 40
       },
@@ -122,6 +151,8 @@
         "image": "https://i.ibb.co/1TJJJYY/gerhard-crous-Vz9-Z-up-JU3-U-unsplash.jpg",
         "number_of_students": 16,
         "instructor_name": "Isabella Brown",
+        "in_email":"isabella@gmail.com",
+        "instructor_img":"https://i.ibb.co/9b043Fv/pablo-arenas-TPZi-ORGCRBg-unsplash.jpg",
         "available_seats": 8,
         "price": 50
       },
@@ -131,6 +162,8 @@
         "image": "https://i.ibb.co/Ky096Wp/olga-guryanova-ft7v-Jxwl2-RY-unsplash.jpg",
         "number_of_students": 14,
         "instructor_name": "Noah Wilson",
+        "in_email":"noah@gmail.com",
+        "instructor_img":"https://i.ibb.co/4prrQPD/hannah-nicollet-JQ2-D4-I-2eyw-unsplash-4.jpg",
         "available_seats": 4,
         "price": 45
       }

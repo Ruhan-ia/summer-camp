@@ -10,7 +10,7 @@ const PopularInstructorCard = ({ is }) => {
         </div>
       </div>
       <div className="card-body">
-        <h2 className="card-title">{instructor_name}</h2>
+        <h2 className="card-title">Instructor: {instructor_name}</h2>
         <p>{sports_name}</p>
         <p>Number of Students:{number_of_students}</p>
       </div>
