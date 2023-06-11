@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.jpg";
 import { BsFillPersonFill } from "react-icons/bs";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    logOut()
+    .then(result =>{
+      const loggedUser = result.user
+      console.log(loggedUser)
+
+    })
+    .catch(error =>{
+      console.log(error.message)
+    })
+  }
   const navOptions = (
     <>
       <li>
-        <Link to='/'>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <Link>Instructors</Link>
@@ -15,9 +29,11 @@ const Navbar = () => {
       <li>
         <Link>Classes</Link>
       </li>
-      <li>
-        <Link>Dashboard</Link>
-      </li>
+      {user && (
+        <li>
+          <Link>Dashboard</Link>
+        </li>
+      )}
     </>
   );
   return (
@@ -61,8 +77,22 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <p className="text-3xl pe-4"><BsFillPersonFill></BsFillPersonFill></p>
-          <Link to='/login'><button className="btn btn-outline btn-info">Login</button></Link>
+          {user ? 
+            <>
+              
+              
+                <button onClick={handleLogOut} className="btn btn-outline btn-info">Logout</button>
+              
+              
+              <p className="text-3xl pe-4">
+                <BsFillPersonFill></BsFillPersonFill>
+              </p>
+            </>
+          : 
+            <Link to="/login">
+              <button className="btn btn-outline btn-info">Login</button>
+            </Link>
+          }
         </div>
       </div>
     </>
