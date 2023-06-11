@@ -9,6 +9,10 @@ const Allclasses = ({ alc }) => {
     available_seats,
     price,
   } = alc;
+
+  const handleAddToCart= (cls) =>{
+        console.log(cls)
+  }
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <div className="avatar">
@@ -23,7 +27,7 @@ const Allclasses = ({ alc }) => {
         <p>Available seats: { available_seats}</p>
         <p>Price: ${price}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Select</button>
+          <button onClick={() =>handleAddToCart(alc)} className="btn btn-primary">Select</button>
         </div>
       </div>
     </div>

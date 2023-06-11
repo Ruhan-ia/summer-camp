@@ -9,6 +9,7 @@ import Classes from "../Pages/Classes/Classes";
 import Instructor from "../Pages/Instructor/Instructor";
 import Test from "../Shared/Test/Test";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
  export  const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ import PrivateRoute from "./PrivateRoute";
           path:'/test',
           
           element:<PrivateRoute><Test></Test></PrivateRoute>
+        },
+        {
+          path:'/dashboard',
+          element:<Dashboard></Dashboard>
         }
       ]
     },
