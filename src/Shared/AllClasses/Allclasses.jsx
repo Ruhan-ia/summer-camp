@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Allclasses = ({ alc }) => {
+  const{user} = useContext(AuthContext)
+  const navigate = useNavigate()
+  const location = useLocation()
   const {
     sports_name,
     image,
@@ -8,10 +14,55 @@ const Allclasses = ({ alc }) => {
     instructor_name,
     available_seats,
     price,
+    _id
   } = alc;
 
-  const handleAddToCart= (cls) =>{
-        console.log(cls)
+  const handleAddToCart= (alc) =>{
+    console.log(alc)
+       if(user && user.email){
+        const selectClasses = {
+          selectedId:_id,
+          price,  sports_name,
+          image,
+          number_of_students,
+          instructor_name,
+          email:user.email,
+          available_seats
+
+        }
+        fetch('https://summer-camp-server-ivory.vercel.app/carts', {
+          method: 'POST',
+          headers:{
+              'content-type': 'application/json'
+          },
+          body:JSON.stringify(selectClasses)
+        })
+        .then(res => res.json())
+        .then(data =>{
+          if(data.insertedId){
+            console.log(data.insertedId)
+            Swal.fire(
+              'Good job!',
+              'success!!'
+            )
+          }
+        })
+       }
+
+       else{
+        Swal.fire({
+          title: 'Please login to select the class!',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Login Now!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            navigate('/login', {state: {from:location}})
+          }
+        })
+       }
   }
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">

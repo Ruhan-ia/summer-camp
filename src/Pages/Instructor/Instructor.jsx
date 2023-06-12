@@ -4,7 +4,7 @@ import AllInstructor from '../../Shared/AllInstructor/AllInstructor';
 const Instructor = () => {
     const  [instructor, setInstructor] = useState([])
     useEffect(() =>{
-        fetch('http://localhost:5000/allClasses')
+        fetch('https://summer-camp-server-ivory.vercel.app/allClasses')
         .then(res => res.json())
         .then(data =>setInstructor(data))
     }, [])
