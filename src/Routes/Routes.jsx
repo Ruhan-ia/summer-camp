@@ -10,6 +10,9 @@ import Instructor from "../Pages/Instructor/Instructor";
 import Test from "../Shared/Test/Test";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import MyClasses from "../Pages/DashboardComponent/Cart/MyClasses";
+import Payment from "../Pages/DashboardComponent/Payment/Payment";
+import PaidClasses from "../Pages/DashboardComponent/Paid/PaidClasses";
 
  export  const router = createBrowserRouter([
     {
@@ -40,12 +43,30 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
           path:'/test',
           
           element:<PrivateRoute><Test></Test></PrivateRoute>
-        },
-        {
-          path:'/dashboard',
-          element:<Dashboard></Dashboard>
         }
+       
       ]
     },
+
+    {
+      
+        path:'/dashboard',
+        element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:'myclasses',
+            element:<MyClasses></MyClasses>
+          },
+          {
+            path:'payment',
+            element:<Payment></Payment>
+          },
+          {
+            path:'paidclasses',
+            element:<PaidClasses></PaidClasses>
+          }
+        ]
+      
+    }
   ]);
   

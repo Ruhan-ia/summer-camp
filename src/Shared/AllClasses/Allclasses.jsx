@@ -3,6 +3,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 import UseCart from "../../Hooks/UseCart";
+import { Helmet } from "react-helmet-async";
 
 const Allclasses = ({ alc }) => {
   const{user} = useContext(AuthContext)
@@ -69,7 +70,11 @@ const Allclasses = ({ alc }) => {
        }
   }
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
+    <section>
+       <Helmet>
+        <title>Summer-Camp || All Classes</title>
+      </Helmet>
+      <div className="card lg:card-side bg-base-100 shadow-xl">
       <div className="avatar">
         <div className="w-auto rounded">
           <img src={image}/>
@@ -86,6 +91,7 @@ const Allclasses = ({ alc }) => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

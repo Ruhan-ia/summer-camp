@@ -19,15 +19,29 @@ const SignUp = () => {
         profile(result.user, data.name, data.PhotoURL)
         .then(() =>{
           console.log('profile updated')
-          reset()
-          Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Your profile has been updated',
-            showConfirmButton: false,
-            timer: 1500
+            const userInfo = {name:data.name, email:data.email}
+          fetch('https://summer-camp-server-ivory.vercel.app/users', {
+            method:'POST',
+            headers:{
+              'content-type':'application/json'
+            },
+            body:JSON.stringify(userInfo)
           })
-          navigate('/')
+          .then(res =>res.json())
+          .then(data=>{
+            if(data.insertedId){
+              reset()
+              Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your profile has been updated',
+                showConfirmButton: false,
+                timer: 1500
+              })
+              navigate('/')
+            }
+          })
+         
         })
         .catch(error =>{
           console.log(error.message)

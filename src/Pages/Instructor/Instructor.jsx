@@ -9,7 +9,7 @@ const Instructor = () => {
         .then(data =>setInstructor(data))
     }, [])
     return (
-        <div className='grid lg:grid-cols-3 gap-5 mb-12'>
+        <div className='grid lg:grid-cols-3 gap-5 mb-12 mt-5'>
             {
             
             instructor.map(ins => <AllInstructor key={ins._id} ins={ins}></AllInstructor>)
