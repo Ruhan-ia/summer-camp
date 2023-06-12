@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.jpg";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsCart3 } from "react-icons/bs";
 import { AuthContext } from "../../Provider/AuthProvider";
+import UseCart from "../../Hooks/UseCart";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = UseCart()
 
   const handleLogOut = () => {
     logOut()
@@ -30,7 +32,9 @@ const Navbar = () => {
       </li>
       {user && (
         <li>
-          <Link to='/dashboard'>Dashboard</Link>
+          <Link to='/dashboard'>Dashboard<BsCart3></BsCart3>
+          <div className="badge badge-secondary">+{cart?.length || 0}</div>
+          </Link>
         </li>
       )}
     </>

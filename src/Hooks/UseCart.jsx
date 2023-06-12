@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const UseCart = () => {
     const {user} = useContext(AuthContext)
-    const{isLoading, data: cart = []} = useQuery({
+    const{refetch, data: cart = []} = useQuery({
         queryKey:['carts', user?.email],
         queryFn:async ()=>{
             const response = await fetch(`https://summer-camp-server-ivory.vercel.app/carts?email=${user.email}`)
@@ -13,7 +13,7 @@ const UseCart = () => {
 
       
     })
-    return [cart, isLoading]
+    return [cart, refetch]
 };
 
 export default UseCart;
