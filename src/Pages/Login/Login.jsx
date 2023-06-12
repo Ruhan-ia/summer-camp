@@ -3,6 +3,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
     const {logIn} =useContext(AuthContext)
@@ -76,6 +77,7 @@ const Login = () => {
             <div className="form-control mt-6">
             <input className="btn btn-primary" type="submit" value="Login" />
             </div>
+            <SocialLogin></SocialLogin>
             <p>Dont have an account? Please  <Link to='/signup'><span className="font-bold text-blue-500">SignUp</span></Link></p>
           </form>
         </div>

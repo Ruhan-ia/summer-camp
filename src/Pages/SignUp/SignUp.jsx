@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 
 const SignUp = () => {
   const {createUser, profile} = useContext(AuthContext)
@@ -142,6 +143,7 @@ const SignUp = () => {
               <input className="btn btn-primary" type="submit" value="Sign Up" />
 
             </div>
+            <SocialLogin></SocialLogin>
             <p>Already have an account? Please <Link to='/login'><span className="font-bold text-blue-500 ">Login</span></Link></p>
           </form>
         </div>
